@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Vlc:VlcControl xmlns:Vlc="clr-namespace:Vlc.DotNet.Wpf;assembly=Vlc.DotNet.Wpf" x:Name="MyControl" Margin="0,0,0,137" />
+        <Button x:Name="playButton" Content="Add file to playlist" HorizontalAlignment="Left" Margin="10,355,0,0" VerticalAlignment="Top" Width="240" Height="25" Click="PlayButton_Click"/>
+        <ScrollViewer HorizontalAlignment="Left" Margin="255,355,0,0" VerticalAlignment="Top" Width="535" Height="85">
+            <StackPanel x:Name="playlistItems">
+
+            </StackPanel>
+        </ScrollViewer>
+        <Button x:Name="playPlaylist" Content="Play All" HorizontalAlignment="Left" Margin="10,415,0,0" VerticalAlignment="Top" Width="240" Height="25" Click="PlayPlaylist_Click"/>
+        <Button x:Name="prev" Content="&lt;&lt;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Margin="10,390,0,0" Click="Prev_Click"/>
+        <Button x:Name="back5s" Content="&lt;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Margin="53,390,0,0"/>
+        <Button x:Name="skip30s" Content="&gt;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Margin="169,390,0,0"/>
+        <Button x:Name="next" Content="&gt;&gt;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Margin="212,390,0,0" Click="Next_Click"/>
     </Grid>
 </Window>
